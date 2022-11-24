@@ -1,0 +1,25 @@
+{
+    "name": "gayhub_zh_CN",
+    "version": "0.1.0",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "devDependencies": {
+        "electron": "^21.3.1",
+        "electron-builder": "^23.6.0"
+    },
+    "author": "suchen",
+    "build":{
+        "win":{
+            "icon":"icon.png",
+            "target":["nsis"]
+        },
+        "nsis": {
+            "allowToChangeInstallationDirectory": false,
+            "oneClick": false,
+            "menuCategory": true,
+            "allowElevation": false
+          }
+    }
+}
